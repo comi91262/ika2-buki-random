@@ -6,7 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-discord-py = {file = "https://github.com/Rapptz/discord.py/archive/v1.3.2.zip"}
+discord-py = "*"
+python = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.7.3"
