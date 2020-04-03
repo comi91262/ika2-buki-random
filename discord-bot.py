@@ -82,22 +82,6 @@ bukiList = [
 ,'パブロ'
 ,'パブロ・ヒュー'
 ,'パーマネント・パブロ'
-,'スプラチャージャー'
-,'スプラスコープ'
-,'スプラチャージャーコラボ'
-,'スプラスコープコラボ'
-,'ヒーローチャージャー レプリカ'
-,'スプラチャージャーベッチュー'
-,'スプラスコープベッチュー'
-,'リッター4K'
-,'4Kスコープ'
-,'リッター4Kカスタム'
-,'4Kスコープカスタム'
-,'ソイチューバー'
-,'ソイチューバーカスタム'
-,'スクイックリンα'
-,'スクイックリンβ'
-,'スクイックリンγ'
 ,'14式竹筒銃・甲'
 ,'14式竹筒銃・乙'
 ,'14式竹筒銃・丙'
@@ -152,6 +136,25 @@ bukiList = [
 ,'スパイガジェットベッチュー' 
 ]
 
+chargerList = [
+        'スプラチャージャー'
+        ,'スプラスコープ'
+        ,'スプラチャージャーコラボ'
+        ,'スプラスコープコラボ'
+        ,'ヒーローチャージャー レプリカ'
+        ,'スプラチャージャーベッチュー'
+        ,'スプラスコープベッチュー'
+        ,'リッター4K'
+        ,'4Kスコープ'
+        ,'リッター4Kカスタム'
+        ,'4Kスコープカスタム'
+        ,'ソイチューバー'
+        ,'ソイチューバーカスタム'
+        ,'スクイックリンα'
+        ,'スクイックリンβ'
+        ,'スクイックリンγ'
+        ]
+
 @client.event
 async def on_ready():
     print('ログインしました')
@@ -163,8 +166,15 @@ async def on_message(message):
     if message.author.bot:
         return
     if message.content == '/buki':
-        randomInt = random.randint(0, 138)
-        await message.channel.send(bukiList[randomInt])
+        chargerOrElse = random.randint(0, 99)
+        if chargerOrElse == 50:
+            randomInt = random.randint(0, 15)
+            await message.channel.send("大当たり! " + chargerList[randomInt])
+        else:
+            randomInt = random.randint(0, 122)
+            await message.channel.send(bukiList[randomInt])
+
+
 
 
 client.run(TOKEN)
