@@ -1,1 +1,1 @@
-worker: discord-bot
+worker: ika2-buki-random
