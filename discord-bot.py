@@ -8,7 +8,7 @@ import random
 client = discord.Client()
 
 # 環境変数からBOTのTOKENと自分のユーザIDを取得
-TOKEN = 'NjkxNTkyMjI3OTk0MjA2MjI5.XnjhAQ.g-Dk4HxCpXOaXxNYvyDStemUzFc'
+TOKEN = 'NjkxNTkyMjI3OTk0MjA2MjI5.XniNdA.GR4yGGrYyYb2EpRca5-jIDV7yIg'
 
 bukiList = [
         'スプラシューター'
