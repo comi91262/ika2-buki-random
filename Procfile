@@ -1,1 +1,1 @@
-worker: ika2-buki-random
+web: ika2-buki-random
