@@ -9,8 +9,7 @@ import (
 	"time"
 )
 
-// 環境変数からBOTのTOKENと自分のユーザIDを取得
-var TOKEN = "NjkxNTkyMjI3OTk0MjA2MjI5.XniNdA.GR4yGGrYyYb2EpRca5-jIDV7yIg"
+var TOKEN = ""
 
 var bukiList = []string{
 	"スプラシューター",

@@ -1,4 +1,4 @@
-module example.com/ika2-buki-random
+module github.com/ykonomi/ika2-buki-random
 
 go 1.14
 
